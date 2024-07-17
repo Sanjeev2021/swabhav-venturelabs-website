@@ -15085,18 +15085,59 @@ html {
 .tab-content {
     display: none;
     padding: 20px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .tab-content img {
     width: 50px;
-    margin: 5px;
+    margin: 30px;
+    justify-content: center;
 }
 
 .tab-active {
     border-bottom: 2px solid #00aaff;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .content-active {
     display: block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
+
+.flex-horizontal {
+  display: flex;
+  justify-content: start;
+  gap: 20px; /* Adjust space between items */
+}
+
+.custom-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list li {
+  display: inline-flex; /* Display list items inline */
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text horizontally */
+  margin-right: 20px; /* Adjust space between items */
+}
+
+.custom-list li .percentage {
+  font-weight: bold;
+  font-size: 1.2em; /* Adjust the size of the percentages */
+}
+
+.custom-list li .text {
+  margin-top: 5px; /* Space between percentage and text */
+}
+
+
+
