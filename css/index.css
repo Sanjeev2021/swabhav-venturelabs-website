@@ -15082,6 +15082,23 @@ html {
     background-color: #f1f1f1;
 }
 
+.tabs .tab.active {
+  font-weight: bold;
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .tab-content {
     display: none;
     padding: 20px 0;
@@ -15095,13 +15112,6 @@ html {
     justify-content: center;
 }
 
-.tab-active {
-    border-bottom: 2px solid #00aaff;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
 
 .content-active {
     display: block;
@@ -15110,24 +15120,30 @@ html {
     display: flex;
 }
 
+
 .flex-horizontal {
   display: flex;
-  justify-content: start;
-  gap: 20px; /* Adjust space between items */
+  justify-content: flex-start; /* Align items to the start */
+  gap: 10px; /* Adjust the gap between items */
 }
 
 .custom-list {
   list-style-type: none; /* Remove default list styling */
   padding: 0;
   margin: 0;
+  display: flex; /* Display list items in a horizontal line */
 }
 
 .custom-list li {
-  display: inline-flex; /* Display list items inline */
-  flex-direction: column;
+  display: flex; /* Display list items as flex items */
+  flex-direction: column; /* Arrange content vertically within each item */
   align-items: center;
   text-align: center; /* Center text horizontally */
-  margin-right: 20px; /* Adjust space between items */
+  margin-right: 10px; /* Adjust space between items */
+}
+
+.custom-list li .image {
+  margin-bottom: 5px; /* Space between image and text */
 }
 
 .custom-list li .percentage {
@@ -15137,7 +15153,119 @@ html {
 
 .custom-list li .text {
   margin-top: 5px; /* Space between percentage and text */
+  width: auto; /* Allow the text to take its natural width */
+  white-space: wrap; /* Prevent text wrapping */
+  width: 100%
 }
 
+.container-navbar {
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: 100%;
+  grid-template-columns: 240px 1fr 240px;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: grid;
+  background-color: white;
+}
+
+.link-brand-nav {
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brand-nav {
+  height: 100%;
+  max-width: none;
+}
+
+.nav-menu {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.right-navbar {
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.dropdown-nav {
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown-toggle-nav {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 12px;
+  display: flex;
+}
+
+.dropdown-chevron-nav {
+  height: 12px;
+  margin-left: 8px;
+}
+
+.link-dropdown {
+  grid-column-gap: 8px;
+  color: #0b0c0d;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+}
+
+.link-dropdown:hover {
+  opacity: .7;
+}
+
+.text-drodpdown-link {
+  flex: none;
+}
+
+.drodpdown-list.w--open {
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.drodpdown-list.homepages-list.w--open {
+  min-width: 160px;
+}
+
+.drodpdown-list.we-speak-list.w--open {
+  min-width: 190px;
+}
+
+.icon-dropdown-link {
+  width: 40px;
+  height: 40px;
+  background-color: #f9f9f9;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 6px;
+}
 
 
