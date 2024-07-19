@@ -6,6 +6,8 @@ html {
   
   body {
     margin: 0;
+    padding : 0;
+    overflow-x: hidden;
   }
   
   article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -4952,7 +4954,7 @@ html {
     width: 100%;
     min-height: 100%;
     padding: 32px 32px 30px;
-    display: flex;
+    /* display: flex; */
     position: relative;
   }
   
@@ -10222,9 +10224,11 @@ html {
   .paper-item-v2-content {
     flex-flow: column;
     flex: 1;
+    padding-left: 25px;
+    padding-right: 10px;
     justify-content: center;
     align-items: stretch;
-    padding: 84px 77px;
+    /* padding: 84px 77px;   */
     display: flex;
     position: relative;
   }
@@ -15099,6 +15103,16 @@ html {
     display: flex;
 }
 
+#practice.tab-content.active {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: center; 
+  align-content: center;   
+}
+
+
+
 .tab-content {
     display: none;
     padding: 20px 0;
@@ -15107,9 +15121,13 @@ html {
 }
 
 .tab-content img {
-    width: 50px;
+    /* width: 50px; */
     margin: 30px;
     justify-content: center;
+    height: 90px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
