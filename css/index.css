@@ -2,12 +2,21 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-family: sans-serif;
+    overflow-x: hidden;
   }
   
   body {
     margin: 0;
     padding : 0;
     overflow-x: hidden;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 0;
+      padding : 0;
+      overflow-x: hidden;
+    }
   }
   
   article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -84,6 +93,8 @@ html {
   svg:not(:root) {
     overflow: hidden;
   }
+
+  
   
   hr {
     box-sizing: content-box;
@@ -12340,8 +12351,16 @@ html {
     }
   
     .secondary-button-icon.slider-button.right---01, .secondary-button-icon.slider-button.left---01 {
-      bottom: -86px;
+      bottom: -65px;
     }
+
+     .engineering-mob-button  .secondary-button-icon.slider-button.right---01, .secondary-button-icon.slider-button.left---01 {
+      bottom: -55px !important;
+    }
+
+    .beyondpoc-mob-button .secondary-button-icon.slider-button.right---01, .secondary-button-icon.slider-button.left---01 {
+      bottom: -70px !important;
+    } 
   
     .secondary-button-icon.slider-button.right---02, .secondary-button-icon.slider-button.left---02 {
       top: -21%;
@@ -15270,7 +15289,7 @@ html {
 }
 
 .drodpdown-list.homepages-list.w--open {
-  min-width: 160px;
+  min-width: 350px;
 }
 
 .drodpdown-list.we-speak-list.w--open {
@@ -15397,4 +15416,28 @@ html {
   padding: 10px; /* Optional: Adds some padding around the links */
   text-decoration: none; /* Removes the underline from the links */
   color: #000; /* Sets the color of the links */
+}
+
+.master-dropdown-links {
+  width: auto;
+  grid-row-gap: 21px;
+  flex-direction: column;
+  display: flex;
+}
+
+
+@media (max-width: 768px) {
+  .tabs {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .tab {
+      margin: 5px 0;
+  }
+
+  .tab-content {
+      overflow-x: auto;
+  }
+  
 }
