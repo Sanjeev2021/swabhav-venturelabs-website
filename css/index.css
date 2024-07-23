@@ -15452,3 +15452,12 @@ html {
   }
   
 }
+
+@media screen and (max-width: 767px) {
+  .master-footer-bottom {
+      grid-row-gap: 80px;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
