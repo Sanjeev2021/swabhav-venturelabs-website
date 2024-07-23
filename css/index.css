@@ -12354,12 +12354,17 @@ html {
       bottom: -65px;
     }
 
-     .engineering-mob-button  .secondary-button-icon.slider-button.right---01, .secondary-button-icon.slider-button.left---01 {
-      bottom: -55px !important;
+     .engineering-mob-button  .secondary-button-icon.slider-button.right---01 {
+      bottom: -50px !important;
+    }
+
+    .engineering-mob-button .secondary-button-icon.slider-button.left---01 {
+      bottom: -50px !important;
     }
 
     .beyondpoc-mob-button .secondary-button-icon.slider-button.right---01, .secondary-button-icon.slider-button.left---01 {
       bottom: -70px !important;
+      padding : 0 !important;
     } 
   
     .secondary-button-icon.slider-button.right---02, .secondary-button-icon.slider-button.left---02 {
