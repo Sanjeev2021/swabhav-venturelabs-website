@@ -15461,3 +15461,99 @@ html {
   }
 }
 
+/** mobile nav */
+/* Hide hamburger menu by default */
+.menu-button {
+  display: none;
+}
+
+/* Basic styling for the hamburger lines */
+.line-menu {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Show hamburger menu and hide nav menu on mobile view */
+@media (max-width: 768px) {
+  .nav-menu {
+      display: none;
+  }
+
+  .menu-button {
+      display: block;
+  }
+
+  
+}
+
+/* Additional styling to ensure visibility */
+
+
+.wrap-menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Initially hide dropdown lists */
+/* .w-dropdown-list {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show dropdown lists when the parent has class 'open' */
+.w-dropdown.open .w-dropdown-list {
+  display: block;
+  opacity: 1;
+} 
+
+
+
+@media (max-width: 768px) {
+  .nav-menu {
+      display: flex;
+      background-color: white;
+  }
+
+  .nav-menu .dropdown-nav { 
+      display: block;
+      height: auto;
+  }
+
+  .dropdown-toggle-nav {
+      display: none; 
+      padding-top: -100px;
+  }
+
+  .who-we-are-dropdown {
+    margin-top: 5%;
+    display: block;
+    padding: 0;
+  }
+
+  .contact-us-dropdown {
+    margin-top: 3%;
+    display: block;
+    padding: 0;
+  }
+
+  .w-dropdown-list {
+      display: block; 
+      background-color: white;
+  }
+
+  .link-dropdown, .link-nav {
+      display: block;
+      padding: 10px 0;
+      text-decoration: none;
+      color: inherit; 
+  }
+}
+
+
+
