@@ -15459,6 +15459,13 @@ html {
       flex-direction: column;
       align-items: center;
   }
+
+  .three-columns-links-footer {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px; 
+  }
 }
 
 /** mobile nav */
@@ -15557,3 +15564,9 @@ html {
 
 
 
+@media (max-width: 768px) {
+  .heading-customer-experience,
+  .heading-customer-experience .text-no-wrap {
+    white-space: normal !important;
+  }
+}
