@@ -15570,3 +15570,25 @@ html {
     white-space: normal !important;
   }
 }
+
+@media (max-width: 768px) {
+  .our-core-values{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .our-team {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .technology-creates-value {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .our-partner {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
